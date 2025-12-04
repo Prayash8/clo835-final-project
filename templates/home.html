@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CLO835 Final Project</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename=background_image) }}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+            margin-bottom: 20px;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to {{ student_name }}'s Final Project</h1>
+    </div>
+    <div class="container">
+        <h2>Application Status</h2>
+        <p>If you see the background image, S3 download is working.</p>
+        <p>If you see this text, the Flask app is running on Port 81.</p>
+    </div>
+</body>
+</html>

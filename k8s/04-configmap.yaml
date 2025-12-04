@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: final
+data:
+  db-host: "mysql-service"
+  db-name: "employees"
+  s3-bucket: "clo835-final-bucket-prayash8"
+  s3-image-filename: "background.jpg"
+  student-name: "Prayash8"
